@@ -12,10 +12,10 @@
 ## Project description
 The aim of this project is creating an on-line store this smart modern design. **The shop** should provide ...
 
-## ToDo (HW6)
-1. Task 1
+## ToDo
+1. Task 1 (HW6)
   - [ ] Describe project
   - [ ] Create database
-  - [ ] Deploy om [Heroku](https://www.heroku.com/)
+  - [x] Deploy on [Heroku](https://www.heroku.com/)
   - [ ] connect project to [Travis CI](https://travis-ci.com/)
 
