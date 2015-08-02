@@ -1,8 +1,8 @@
-user_roles
+###user_roles
 - id
 - name
 
-users
+###users
 - id
 - login : string
 - pass : string
@@ -17,4 +17,18 @@ users
 - comment : string
 - discount : integer
 
+
+###units
+- id
+- name
+
+###goods
+- id
+- name : string
+- code : integer
+- description : text
+- aditional_params : hash ?
+- unit : references
+- count : float
+- price : float
 
