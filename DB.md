@@ -33,19 +33,33 @@
 - count : float - *количество товара*
 - price : float - *цена товара*
 
+###goods_in_cart_order
+- id - *внутренний идентификатор*
+- carts_orders : references - *ссылка на корзину или заказ **(возможны ли составные типы?)***
+- goods : references - *товар в корзине или заказе*
+- count : float - *количество товара*
+- price : float - *цена товара*
+- sum : float - *сумма*
+
 ###cart - *корзина*
 - id - *внутренний идентификатор*
-- goods : array of goods - *таблица товаров*
+- goods : references goods_in_cart_order - *таблица товаров*
 - user : references - *владелец корзины*
 - count : integer - *количество позиций в корзине*
 
-###order - *таблица заказов*
+###status
 - id - *внутренний идентификатор*
-- goods : array of goods - *таблица заказов*
+- name - *наименование статуса*
+- value - *значение статуса*
+
+###orders - *таблица заказов*
+- id - *внутренний идентификатор*
+- goods : references goods_in_cart_order - *таблица заказов*
 - user : references - *заказчик*
 - count : integer - *количество позиций в заказе*
 - sum : float - *сумма заказа*
 - discount : float - *скидка по заказу (**суммой или процентом**?)*
+- status : references - *статус заказа*
 
 ###discounts - *таблица скидок*
 - id - *внутренний идентификатор*
