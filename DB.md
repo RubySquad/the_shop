@@ -32,3 +32,19 @@
 - count : float
 - price : float
 
+###cart
+- id
+- goods : array of goods
+- user : references
+- count : integer
+- sum : float
+- discount : float
+
+###order
+- id
+- goods : array of goods
+- user : references
+- count : integer
+- sum : float
+- discount : float
+
