@@ -19,3 +19,4 @@
 # Ignore personal rubocop settings
 .rubocop.yml
 .rubocop_todo.yml
+erd.pdf
