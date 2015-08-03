@@ -48,3 +48,9 @@
 - sum : float
 - discount : float
 
+###discounts
+- id
+- name
+- sum_from : float
+- sum_to : float
+- value : float
